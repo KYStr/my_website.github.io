@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品展示網站</title>
+    <meta name="description" content="展示個人作品、專案與設計的個人品牌網站">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                Portfolio
+            </div>
+            <div class="nav-links">
+                <a href="#home">首頁</a>
+                <a href="#about">關於我</a>
+                <a href="#portfolio">作品集</a>
+                <a href="#contact">聯絡方式</a>
+            </div>
+            <div class="hamburger">
+                ☰
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首頁 -->
+    <section id="home" class="hero" style="background-image: url('https://sb.koding.school/project_assets/436ac695908d6a90d711bc861f2bf5f2.jpg?v=1'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1>打造你的專業形象，展示最好的自己</h1>
+            <p>
+                平凡無奇的學生 | 教程式老師 | 騙吃騙吃
+            </p>
+            <a href="#portfolio" class="cta-button">查看作品</a>
+        </div>
+    </section>
+
+
+    <!-- 關於我 -->
+    <section id="about" class="about">
+        <div class="about-grid">
+            <div class="about-content">
+                <h2>關於我</h2>
+                <p>
+                    我是一名專門指導初學者的程式設計老師，透過簡單易懂的方式，幫助學生快速掌握程式基礎，建立扎實的邏輯思維。
+                </p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>2023 - 現在</h3>
+                        <p>
+                            程式老師 / 接案工程師 / 思想旅行家
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2021 - 2023</h3>
+                        <p>
+                            無聊接接案的工程師
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2019 - 2021</h3>
+                        <p>
+                            平凡無奇的大學生
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image" style="background-image: url('https://sb.koding.school/project_assets/13797d833e52f41fafd353c43c9b2579.png?v=1');"></div>
+
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="portfolio" class="portfolio">
+        <h2 style="text-align: center; margin-bottom: 2rem;">作品集</h2>
+        <section id="portfolio" class="portfolio-section">
+            <h2>我的作品集</h2>
+            <div class="portfolio-container">
+                <!-- 卡片 1 -->
+                <div class="portfolio-card">
+
+                    <div class="portfolio-video">
+                        <h3>我的作品影片</h3>
+                        <iframe width="560" height="315" src="https://firebasestorage.googleapis.com/v0/b/ai-orangeapple-co.appspot.com/o/videos%2F1aWUYSZVhpjSEtBmIKDm?alt=media&token=7884b6e5-adc3-4e94-8e0f-f544117c069b"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>星星領航員</h3>
+                        <p>
+                            一個關於友誼與互助的溫暖小故事。
+                        </p>
+
+                    </div>
+                </div>
+                <!-- 卡片 2 -->
+                <div class="portfolio-card">
+                    <img src="./assets/imgages/ABC.jpg" alt="作品2">
+                    <div class="card-content">
+                        <h3>作品標題 2</h3>
+                        <p>
+                            自己看吧。
+                        </p>
+                        <a href="https://sb.koding.school/project_assets/b39e35c699f01c100b6401655aa8ed1a.png?v=1" class="btn">查看詳情</a>
+                    </div>
+                </div>
+                <!-- 卡片 3 -->
+                <div class="portfolio-card">
+                    <img src="https://sb.koding.school/project_assets/87d6a6060740ae4d53123db7fdec19b0.png?v=1" alt="作品3">
+                    <div class="card-content">
+                        <h3>作品標題 3</h3>
+                        <p>
+                            不多說了。
+                        </p>
+                        <a href="https://sb.koding.school/project_assets/87d6a6060740ae4d53123db7fdec19b0.png?v=1" class="btn">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item" onclick="openModal('專案 1', 'wdksmrjey')">
+                <div class="portfolio-image">
+                    <img src="827014717840051488.png">
+                </div>
+                <div class="portfolio-content">
+                    <h3>專案 1</h3>
+                    <p>
+                        電子商務網站設計與開發
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-item" onclick="openModal('專案 2', '2pdspnz4g')">
+                <div class="portfolio-image">
+                    <img src="827014717840051488.png">
+                </div>
+                <div class="portfolio-content">
+                    <h3>專案 2</h3>
+                    <p>
+                        企業形象網站設計
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-item" onclick="openModal('專案 3')">
+
+
+                <model-viewer
+                    src="https://drive.google.com/uc?export=download&id=1ZuwNw4GJ62QhqOfbDAfDYUJudtP4ebDT"
+                    alt="3D Model"
+                    auto-rotate
+                    camera-controls
+                    ar>
+                </model-viewer>
+
+            </div>
+        </div>
+    </section>
+    <model-viewer
+        src="https://drive.google.com/uc?export=download&id=1ZuwNw4GJ62QhqOfbDAfDYUJudtP4ebDT"
+        alt="3D Model"
+        auto-rotate
+        camera-controls
+        ar>
+    </model-viewer>
+    <!-- 聯絡方式 -->
+    <section id="contact" class="contact">
+        <h2 style="text-align: center; margin-bottom: 2rem;">聯絡我</h2>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">訊息</label>
+                <textarea id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">送出</button>
+        </form>
+        <div class="social-links">
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/mrbeast/" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
